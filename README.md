@@ -30,7 +30,7 @@ Make sure that scripts and wallpapers are properly referenced in config files.
 
 ## Credit
 
-Credit for neofetch config base: `https://github.com/AlguienSasaki/Dotfiles`
-Fish config based on garuda linux default fish config
-Waybar, wofi, mako, hypr, swaylock, wlogout configs based on default HyprV config files
-Wallpapers by Simon Stalenhag
+* Credit for neofetch config base: `https://github.com/AlguienSasaki/Dotfiles`
+* Fish config based on garuda linux default fish config
+* Waybar, wofi, mako, hypr, swaylock, wlogout configs based on default HyprV config files
+* Wallpapers by Simon Stalenhag
