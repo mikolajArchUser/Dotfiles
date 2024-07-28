@@ -5,16 +5,16 @@
 
 ## My Setup
 
-*OS: Garuda Linux (Arch based)
-*Shell: Fish
-*Terminal: Konsole
-*DE: Hyprland
-*Bar: Waybar
-*Font: Hack Nerd Font
-*Launcher: Wofi
-*Lock: Swaylock
-*Session Management: Wlogout
-*Notifications: Mako
+* OS: Garuda Linux (Arch based)
+* Shell: Fish
+* Terminal: Konsole
+* DE: Hyprland
+* Bar: Waybar
+* Font: Hack Nerd Font
+* Launcher: Wofi
+* Lock: Swaylock
+* Session Management: Wlogout
+* Notifications: Mako
 
 
 ## Installing
