@@ -5,6 +5,19 @@ set VIRTUAL_ENV_DISABLE_PROMPT "1"
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 set -x SHELL /usr/bin/fish
 
+function fish_prompt
+    set_color green
+    echo -n (whoami) 
+    set_color white
+    echo -n "@victus "
+    set_color blue
+    echo -n (prompt_pwd)
+    set_color normal
+    echo -n ' >> '
+end
+
+
+# Notifications when a command is done
 # Set settings for https://github.com/franciscolourenco/done
 set -U __done_min_cmd_duration 10000
 set -U __done_notification_urgency_level low
@@ -18,14 +31,19 @@ if not test -x /usr/bin/yay; and test -x /usr/bin/paru
     alias yay 'paru'
 end
 
-# Common use
+# Basically prettier commands
 alias dir 'dir --color=auto'
 alias grep 'ugrep --color=auto'
 alias egrep 'ugrep -E --color=auto'
 alias fgrep 'ugrep -F --color=auto'
 alias ip 'ip -color'
 alias vdir 'vdir --color=auto'
-alias wget 'wget -c '
+
+# Custom commands (some commands that I use for my own stuff dont worry hehe)
+alias randmac 'sudo ip link set wlp4s0 down && sudo macchanger -m (python3 ~/Documents/python_scripts/rand_mac.py) wlp4s0 && sudo ip link set wlp4s0 up' # set a random mac address to wlp4s0 interface (for bypassing mac filter)
+alias clai 'shred -u -n 3 -z ~/.ollama/history' # clear ai chat history
+alias clcb 'shred -u -n 3 -z ~/.cache/cliphist/db' # clear clipboard history
+alias clfish 'shred -u -n 3 -z ~/.local/share/fish_history' # clear fish history
 
 # Get fastest mirrors
 alias mirror 'sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist'
