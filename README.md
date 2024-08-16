@@ -15,6 +15,7 @@
 * Lock: Swaylock
 * Session Management: Wlogout
 * Notifications: Mako
+* Text Editior: Neovim
 
 
 ## Installing
@@ -25,12 +26,11 @@ git clone <https://github.com/mikolajArchUser/Dotfiles.git>
 ```
 
 Then you can start copying the dotfiles to your programs config files.
-Make sure that scripts and wallpapers are properly referenced in config files. 
-
+My scripts are stored in `~/.config/HyprV/waybar/scripts`, so if you want to store them 
+somewhere else, you need to update the paths to them.
 
 ## Credit
 
 * Credit for neofetch config base: `https://github.com/AlguienSasaki/Dotfiles`
 * Fish config based on garuda linux default fish config
-* Waybar, wofi, mako, hypr, swaylock, wlogout configs based on default HyprV config files
-* Wallpapers by Simon Stalenhag
+* Waybar, wofi, mako, hypr, swaylock and wlogout config files based on default HyprV config files
