@@ -8,17 +8,13 @@ function fish_prompt
     set_color green
     echo -n (whoami) 
     set_color white
-    echo -n "@victus "
+    echo -n "@"
+    echo -n (hostname)
     set_color blue
     echo -n (prompt_pwd)
     set_color normal
     echo -n ' >> '
 end
-
-# Notifications when a command is done
-# Set settings for https://github.com/franciscolourenco/done
-set -U __done_min_cmd_duration 10000
-set -U __done_notification_urgency_level low
 
 # Replace ls with eza
 alias ls 'eza -al --color=always --group-directories-first --icons' # preferred listing

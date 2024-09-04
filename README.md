@@ -5,9 +5,9 @@
 
 ## My Setup
 
-* OS: Garuda Linux (Arch based)
+* OS: Arch Linux
 * Shell: Fish
-* Terminal: Konsole
+* Terminal: Kitty
 * DE: Hyprland
 * Bar: Waybar
 * Font: Hack Nerd Font
@@ -22,7 +22,7 @@
 
 First you need to clone the repo with:
 ```
-git clone <https://github.com/mikolajArchUser/Dotfiles.git>
+git clone <https://github.com/tpaau-17DB/Dotfiles.git>
 ```
 
 Then you can start copying the dotfiles to your programs config files.
