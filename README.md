@@ -22,12 +22,12 @@
 
 First you need to clone the repo with:
 ```
-git clone <https://github.com/tpaau-17DB/Dotfiles.git>
+git clone https://github.com/tpaau-17DB/Dotfiles.git
 ```
 
 Then you can start copying the dotfiles to your programs config files.
 My scripts are stored in `~/.config/HyprV/waybar/scripts`, so if you want to store them 
-somewhere else, you need to update the paths to them.
+somewhere else, you need to their paths.
 
 ## Credit
 
