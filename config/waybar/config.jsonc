@@ -9,7 +9,7 @@
     "modules-left": [
         "custom/power_btn",
         "custom/lock_screen",
-        "hyprland/window"
+        /*"hyprland/window"*/
     ],
     "modules-center": [
         "idle_inhibitor",
@@ -190,7 +190,6 @@
 	"tooltip": false,
 	"interval": 1
     },
-
 
     "custom/updates": {
         "format": "{}",

@@ -9,7 +9,7 @@ function fish_prompt
     echo -n (whoami) 
     set_color white
     echo -n "@"
-    echo -n (hostname)
+    echo -n (hostname) ""
     set_color blue
     echo -n (prompt_pwd)
     set_color normal
@@ -17,10 +17,12 @@ function fish_prompt
 end
 
 # Replace ls with eza
-alias ls 'eza -al --color=always --group-directories-first --icons' # preferred listing
+alias ls 'eza -l --color=always --icons' # preferred listing
+alias la 'eza -la --color=always --icons' # preferred listing
 
 # Get fastest mirrors
 alias mirror 'sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist'
+alias mirror-tor 'sudo torify reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist'
 
 function hexdec
     printf "%d\n" "0x$argv"

@@ -31,9 +31,15 @@ colorscheme habamax
 " Enable ALE
 let g:ale_enabled = 1
 
+set linebreak
+set scrolloff=15
 set termguicolors
 set shiftwidth=4
 set expandtab
+
+autocmd VimEnter * echo "I use Arch BTW"
+
+
 
 lua << EOF
 local nvim_lsp = require('lspconfig')
